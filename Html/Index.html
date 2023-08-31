@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Página web de Blog de Café">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font" >
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preload" href="/CSS/normalize.css" as="style">
+    <link rel="stylesheet" href="/CSS/normalize.css">
+    <link rel="preload" href="/CSS/styles.css" as="style">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="preload" href="/Img/blog1.jpg" as="image">
+    <link rel="prefetch" href="nosotros.html" as="document">
+    <title>Blog de Café</title>
+</head>
+<body>
+    <header class="header">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="Index.html">
+                    <h1 class="logo__nombre no-margin">Blog <span class="logo__bold">de Café</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a  href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+        <div class="header__texto">
+            <h2 class="no-margin">Blog de café con consejos y cursos</h2>
+            <p class="no-margin">Aprende de los expertos con las mejores recetas</p>
+        </div>
+    </header>
+    <div class="contenedor contenido-principal">
+            <main>
+                <h3>Nuestro Blog</h3>
+                <article class="entrada">
+                    <div class="entrada__img">
+                        <picture>
+                            <source loading="lazy" srcset="/img/blog1.jpg" type="img/webp">
+                            <img loading="lazy" src="/img/blog1.jpg" alt="imagen blog">
+                        </picture>
+                    </div>
+                    <div class="entrada__contenido">
+                        <h4 class="no-margin">Tipos de granos de café</h4>
+                        <p>Existen variedad de granos de cafe, esto depende de la especie de la planta e intervienen factores ambientales como la humedad y la altura para que determinadas especies se desarollen en ciertos sectores.</p>
+                        <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                    </div>
+                </article>
+                <article class="entrada">
+                    <div class="entrada__img">
+                        <picture>
+                            <source loading="lazy" srcset="img/blog2.webp" type="img/webp">
+                            <img loading="lazy" src="/img/blog2.jpg" alt="imagen blog">
+                        </picture>
+                    </div>
+                    <div class="entrada__contenido">
+                        <h4 class="no-margin">3 Deliciosas recetas para café</h4>
+                        <p>Existen variedad de granos de cafe, esto depende de la especie de la planta e intervienen factores ambientales como la humedad y la altura para que determinadas especies se desarollen en ciertos sectores.</p>
+                        <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
+                    </div>
+                </article>
+                <article class="entrada">
+                    <div class="entrada__img">
+                        <picture>
+                            <source loading="lazy" srcset="/img/blog3.webp" type="img/webp">
+                            <img loading="lazy" src="/img/blog3.jpg" alt="imagen blog">
+                        </picture>
+                    </div>
+                    <div class="entrada__contenido">
+                        <h4 class="no-margin">Beneficios del café</h4>
+                        <p>Existen variedad de granos de cafe, esto depende de la especie de la planta e intervienen factores ambientales como la humedad y la altura para que determinadas especies se desarollen en ciertos sectores.</p>
+                        <a href="entrada.html" class="boton boton boton--primario">Leer Entrada</a>
+                    </div>
+                </article>
+            </main>
+            <aside class="sidebar">
+                <h3>Nuestros Cursos y Talleres</h3>
+                <ul class="cursos no-padding">
+                    <li class="widget-cursos">
+                        <h4 class="no-margin">Técnicas de extracción de café</h4>
+                        <p class="widget-cursos__label">Precio: <span class="widget-cursos__info">Gratis</span></p>
+                        <p class="widget-cursos__label">Cupo: <span class="widget-cursos__info">20</span></p>
+                        <a href="" class="boton boton--secundario">Más información sobre nuestros cursos</a>
+                     </li>
+                     <li class="widget-cursos">
+                        <h4 class="no-margin">4 Recetas de café para principiantes</h4>
+                        <p class="widget-cursos__label">Precio: <span class="widget-cursos__info">Gratis</span></p>
+                        <p class="widget-cursos__label">Cupo: <span class="widget-cursos__info">20</span></p>
+                        <a href="" class="boton boton--secundario">Más información sobre nuestros cursos</a>
+                     </li>
+                </ul>
+            </aside>
+    </div>  
+    <footer class="footer">
+        <div class="contenedor">
+            <div class="barra">
+                <a class="logo" href="Index.html">
+                    <h1 class="logo__nombre no-margin">Blog <span class="logo__bold">de Café</span></h1>
+                </a>
+                <nav class="navegacion">
+                    <a  href="nosotros.html" class="navegacion__enlace">Nosotros</a>
+                    <a href="cursos.html" class="navegacion__enlace">Cursos</a>
+                    <a href="contacto.html" class="navegacion__enlace">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+    <script src="/JS/modernizr.js"></script>      
+</body>
+</html>

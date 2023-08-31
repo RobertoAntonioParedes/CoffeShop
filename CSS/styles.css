@@ -1,0 +1,313 @@
+:root{
+    --fuenteHeading: 'PT Sans', sans-serif;
+    --fuenteParrafos: 'Open Sans', sans-serif;
+
+    --primario: #784D3C;
+    --secundario: #ffffff;
+    --terciario: #000000;
+    --gris: #e1e1e1;
+
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/* Globales*/
+
+.contenedor{
+    width: min(80%, 120rem);
+    margin: 0 auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+h1,h2,h3,h4{
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 4.8rem;
+}
+
+h2{
+    font-size: 4rem; ;
+}
+
+h3{
+    font-size: 3.2rem;
+}
+
+h4{
+    font-size: 2.8rem;
+}
+
+img{
+    max-width: 100%;
+}
+
+.centrar-texto{
+    text-align: center;
+}
+
+/*Utilidades*/
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
+}
+
+.webp .header{
+    background-image: url(/Img/banner.webp);
+}
+
+.header{
+    background-image: url(../img/banner.jpg);
+    height: 60rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header__texto{
+    text-align: center;
+    color: var(--secundario);
+    margin-top: 5rem;
+}
+
+.header__logo{
+    color: var(--secundario);
+}
+
+@media (min-width: 768px) {
+    .header__texto{
+        margin-top: 17rem;
+    }
+    
+}
+
+.barra{
+    padding: 4rem;
+}
+
+@media (min-width: 768px) {
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }   
+}
+
+
+.logo__nombre{
+    font-weight: normal;
+    text-align: center;
+    color: var(--secundario);
+}
+
+.logo__bold{
+    font-weight: bold;
+}
+
+.navegacion{
+    display: block;
+    text-align: center;
+
+}
+
+.navegacion__enlace{
+    color: var(--secundario);
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }    
+}
+
+.entrada{
+    border-bottom: .3rem solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.boton{
+    display: block;
+    color: var(--secundario);
+    font-family: var(--fuenteHeading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1rem 3rem;
+    border-radius: .5rem;
+    margin-bottom: 2rem;
+    border: none;
+}
+
+@media (min-width: 768px){
+    .boton{
+        display: inline-block;
+    }
+}
+
+.boton:hover{
+    cursor: pointer;
+}
+
+.boton--primario{
+    background-color: var(--terciario);
+}
+
+.boton--primario:hover{
+    background: linear-gradient(to top, transparent, var(--terciario));
+}
+
+.boton--secundario{
+    background-color: var(--primario);
+}
+
+.boton--secundario:hover{
+    background: linear-gradient(to top, transparent, var(--primario));
+}
+
+.cursos{
+    list-style: none;
+}
+
+.widget-cursos{
+    border-bottom: .3rem solid var(--gris) ;
+}
+
+.widget-cursos:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+.widget-cursos__label,
+.curso__label{
+    font-family: var(--fuenteHeading);
+    font-weight: 700;
+}
+
+.widget-cursos__info,
+.curso__info{
+    font-weight: 400;
+}
+
+.widget-cursos__info,
+.curso__info{
+    font-size: 2rem;
+}
+
+.footer{
+    background-color: var(--terciario);
+    margin-top: 4rem;
+}
+
+@media (min-width: 768px) {
+    .sobre-nosotros{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .curso{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 2rem;
+        border-bottom: .3rem solid var(--gris);
+        margin-bottom: 2rem;
+    }
+}
+
+.curso:last-of-type{
+    border-bottom: none;
+}
+
+.error{
+    background-color: rgb(185, 0, 0);
+    padding: .3rem;
+    color: var(--secundario);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.enviado{
+    background-color: rgb(0, 185, 0);
+    padding: .3rem;
+    color: var(--secundario);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contacto-bg{
+    background-image: url(/Img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+}
+
+.formulario{
+    background-color: var(--secundario);
+    margin: -5rem auto 0 auto;
+    width: 95%;
+    padding: 5rem;
+}
+
+@media (min-width: 768px) {
+    .campo{
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 1.7rem;
+}
+
+.campo__field{
+    flex: 1;
+    border: .1rem solid var(--gris);
+}
+
+.campo__field--textarea{
+    resize: none;
+    height: 17rem;
+    width: 100%;
+}
